@@ -14,7 +14,7 @@ The aim of the exercise is to practice fetching data nad rendering lists.
 
 Inside each section folder you will find:
 
-- a `index.js` file for the logic of each section **build everyhting here and then break it down into components**
+- a `index.js` file for the logic of each section **build everything here and then break it down into components**
 - a `template.html` that shows you an example of what your React components should create. Take note of `className` to get the styling working.
 - a `components` folder with suggested components to create so you can practice props.
 
@@ -44,7 +44,9 @@ The `Users` list should render:
 - The background colour of each list item should change according to gender
 - The email of the user
 
-The `Adivce` slip section should render:
+### Challenge Section
+
+The `Advice` slip section should render:
 
 - A single random advice slip
 - A list of favourtie advice slips
