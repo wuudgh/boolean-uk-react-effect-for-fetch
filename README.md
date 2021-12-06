@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`npm install`
 
-## Available Scripts
+`npm start`
 
-In the project directory, you can run:
+## Instructions
 
-### `yarn start`
+In the sections folder you will find three sections to complete for this exercise.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You have `Art`, `Users` and `Advice`.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The aim of the exercise is to practice fetching data nad rendering lists.
 
-### `yarn test`
+Inside each section folder you will find:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- a `index.js` file for the logic of each section **build everyhting here and then break it down into components**
+- a `template.html` that shows you an example of what your React components should create. Take note of `className` to get the styling working.
+- a `components` folder with suggested components to create so you can practice props.
 
-### `yarn build`
+For each section you will need to make a fetch request using the following APIs:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Art - https://api.artic.edu/docs/#introduction
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Note: You will find the following section helpful for the images: https://api.artic.edu/docs/#images
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Users - https://randomuser.me/documentation
 
-### `yarn eject`
+Advice - https://api.adviceslip.com/
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Deliverables
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The `Art` list should render:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- An image of the artwork
+- The title of the artwork
+- The artist's name
+- A list of subjects from `subject_titles`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The `Users` list should render:
 
-## Learn More
+- An image of the user
+- The full name of the user
+- The background colour of each list item should change according to gender
+- The email of the user
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The `Adivce` slip section should render:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- A single random advice slip
+- A list of favourtie advice slips
 
-### Code Splitting
+The `Advice` slip section should allow users to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Fetch another advice slip using a button
+- Save and advice slip to favourites using a button
